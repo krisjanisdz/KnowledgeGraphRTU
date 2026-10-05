@@ -1,0 +1,1334 @@
+{
+  "version": "3.0.0",
+  "visualisation": {
+    "nodes": [
+      {
+        "id": "n:0",
+        "position": {
+          "x": 242.79695824916513,
+          "y": 79.87710215640556
+        }
+      },
+      {
+        "id": "n:1",
+        "position": {
+          "x": -5.157592298746664,
+          "y": 151.05278114746463
+        }
+      },
+      {
+        "id": "n:2",
+        "position": {
+          "x": -56.26200833398597,
+          "y": -144.24835365017776
+        }
+      },
+      {
+        "id": "n:3",
+        "position": {
+          "x": -197.84912315630467,
+          "y": 226.11291224225764
+        }
+      },
+      {
+        "id": "n:4",
+        "position": {
+          "x": 261.04462057093247,
+          "y": -131.09581557331282
+        }
+      }
+    ]
+  },
+  "dataModel": {
+    "version": "3.0.0",
+    "graphSchemaRepresentation": {
+      "version": "1.0.0",
+      "graphSchema": {
+        "nodeLabels": [
+          {
+            "$id": "nl:0",
+            "token": "Study program",
+            "properties": [
+              {
+                "$id": "p:5",
+                "token": "program_id",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:6",
+                "token": "title",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:7",
+                "token": "study_mode",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:8",
+                "token": "languages",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:9",
+                "token": "credit_points",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:10",
+                "token": "prerequisites",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:11",
+                "token": "future_employment",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:12",
+                "token": "professional_classification_code",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:1",
+            "token": "Study course",
+            "properties": [
+              {
+                "$id": "p:13",
+                "token": "course_id",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:14",
+                "token": "credit_points",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:15",
+                "token": "languages",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:16",
+                "token": "aims",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:28",
+                "token": "title",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:2",
+            "token": "Course topic",
+            "properties": [
+              {
+                "$id": "p:17",
+                "token": "topic_id",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:18",
+                "token": "course_id",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:19",
+                "token": "title",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:3",
+            "token": "Learning outcome",
+            "properties": [
+              {
+                "$id": "p:20",
+                "token": "outcome_id",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:21",
+                "token": "text",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:22",
+                "token": "scope",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:23",
+                "token": "owner_id",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:4",
+            "token": "Study field",
+            "properties": [
+              {
+                "$id": "p:3",
+                "token": "study_field_id",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:4",
+                "token": "name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          }
+        ],
+        "relationshipTypes": [
+          {
+            "$id": "rt:0",
+            "token": "includes",
+            "properties": [
+              {
+                "$id": "r:0:credit_points",
+                "token": "creditPoints",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "r:0:section_code",
+                "token": "sectionCode",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "r:0:section_name",
+                "token": "sectionName",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "r:0:subsection_name",
+                "token": "subsectionName",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "rt:1",
+            "token": "offers",
+            "properties": [
+              {
+                "$id": "p:26",
+                "token": "program_id",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:27",
+                "token": "study_field_id",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "rt:3",
+            "token": "covers",
+            "properties": [
+              {
+                "$id": "p:24",
+                "token": "course_id",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:25",
+                "token": "topic_id",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "rt:4",
+            "token": "achieves",
+            "properties": [
+              {
+                "$id": "p:1",
+                "token": "course_id",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:2",
+                "token": "outcome_id",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          }
+        ],
+        "nodeObjectTypes": [
+          {
+            "$id": "n:0",
+            "labels": [
+              {
+                "$ref": "#nl:0"
+              }
+            ]
+          },
+          {
+            "$id": "n:1",
+            "labels": [
+              {
+                "$ref": "#nl:1"
+              }
+            ]
+          },
+          {
+            "$id": "n:2",
+            "labels": [
+              {
+                "$ref": "#nl:2"
+              }
+            ]
+          },
+          {
+            "$id": "n:3",
+            "labels": [
+              {
+                "$ref": "#nl:3"
+              }
+            ]
+          },
+          {
+            "$id": "n:4",
+            "labels": [
+              {
+                "$ref": "#nl:4"
+              }
+            ]
+          }
+        ],
+        "relationshipObjectTypes": [
+          {
+            "$id": "r:0",
+            "type": {
+              "$ref": "#rt:0"
+            },
+            "from": {
+              "$ref": "#n:0"
+            },
+            "to": {
+              "$ref": "#n:1"
+            }
+          },
+          {
+            "$id": "r:1",
+            "type": {
+              "$ref": "#rt:1"
+            },
+            "from": {
+              "$ref": "#n:4"
+            },
+            "to": {
+              "$ref": "#n:0"
+            }
+          },
+          {
+            "$id": "r:3",
+            "type": {
+              "$ref": "#rt:3"
+            },
+            "from": {
+              "$ref": "#n:1"
+            },
+            "to": {
+              "$ref": "#n:2"
+            }
+          },
+          {
+            "$id": "r:4",
+            "type": {
+              "$ref": "#rt:4"
+            },
+            "from": {
+              "$ref": "#n:1"
+            },
+            "to": {
+              "$ref": "#n:3"
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "$id": "c:4",
+            "name": "outcome_id_Learning_outcome_key",
+            "constraintType": "key",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:3"
+            },
+            "properties": [
+              {
+                "$ref": "#p:20"
+              }
+            ]
+          },
+          {
+            "$id": "c:5",
+            "name": "topic_id_Course_topic_key",
+            "constraintType": "key",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:2"
+            },
+            "properties": [
+              {
+                "$ref": "#p:17"
+              }
+            ]
+          },
+          {
+            "$id": "c:3",
+            "name": "course_id_Study_course_key",
+            "constraintType": "key",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:1"
+            },
+            "properties": [
+              {
+                "$ref": "#p:13"
+              }
+            ]
+          },
+          {
+            "$id": "c:2",
+            "name": "program_id_Study_program_key",
+            "constraintType": "key",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:0"
+            },
+            "properties": [
+              {
+                "$ref": "#p:5"
+              }
+            ]
+          },
+          {
+            "$id": "c:1",
+            "name": "study_field_id_Study_field_key",
+            "constraintType": "key",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:4"
+            },
+            "properties": [
+              {
+                "$ref": "#p:3"
+              }
+            ]
+          }
+        ],
+        "indexes": []
+      }
+    },
+    "graphSchemaExtensionsRepresentation": {
+      "nodeKeyProperties": [
+        {
+          "node": {
+            "$ref": "#n:4"
+          },
+          "keyProperties": [
+            {
+              "$ref": "#p:3"
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:0"
+          },
+          "keyProperties": [
+            {
+              "$ref": "#p:5"
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:1"
+          },
+          "keyProperties": [
+            {
+              "$ref": "#p:13"
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:2"
+          },
+          "keyProperties": [
+            {
+              "$ref": "#p:17"
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:3"
+          },
+          "keyProperties": [
+            {
+              "$ref": "#p:20"
+            }
+          ]
+        }
+      ],
+      "relationshipKeyProperties": []
+    },
+    "graphMappingRepresentation": {
+      "dataSourceSchema": {
+        "type": "local",
+        "tableSchemas": [
+          {
+            "name": "nodes_study_programs.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "program_id",
+                "sample": "DMB0",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "title",
+                "sample": "Business Informatics",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "education_classification_code",
+                "sample": "45483",
+                "recommendedType": {
+                  "type": "integer"
+                }
+              },
+              {
+                "name": "level_and_type",
+                "sample": "Second-Cycle Higher Education (Academic Master) Studies",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "study_mode",
+                "sample": "Full time, Part time",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "languages",
+                "sample": "Latvian, English",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "accreditation",
+                "sample": "29.11.2023 - 30.11.2029; Accreditation certificate No 2023/44-A",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "credit_points",
+                "sample": "120.0",
+                "recommendedType": {
+                  "type": "float"
+                }
+              },
+              {
+                "name": "duration",
+                "sample": "Full time studies - 2.0; Part time studies - 2.5",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "abstract",
+                "sample": "The study programme is an interdisciplinary programme that has been implemented since 2010/2011. stu...",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "aims",
+                "sample": "The aim of the study programme is to prepare professionals with expertise in systems thinking and en...",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "tasks",
+                "sample": "Tasks of the study programme: - to develop students’ systems thinking ability and their skills to us...",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "prerequisites",
+                "sample": "First cycle higher education in the field of computer science and information technology, or compara...",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "future_employment",
+                "sample": "Graduates of the study programme work for IT companies, public and private institutions using advanc...",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "continue_studies",
+                "sample": "Opportunity to continue doctoral studies in Latvia, for instance, in the following study programmes:...",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "professional_classification_code",
+                "sample": "-",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "source_url",
+                "sample": "https://studreg.rtu.lv/reg/pub/spr/pdf/56/en",
+                "recommendedType": {
+                  "type": "string"
+                }
+              }
+            ]
+          },
+          {
+            "name": "nodes_study_fields.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "study_field_id",
+                "sample": "FIELD_9f58481800cf03",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "name",
+                "sample": "Information Technology, Computer Engineering, Electronics, Telecommunications, Computer Control and ...",
+                "recommendedType": {
+                  "type": "string"
+                }
+              }
+            ]
+          },
+          {
+            "name": "nodes_study_courses.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "course_id",
+                "sample": "DE0745",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "title",
+                "sample": "Advanced data technologies",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "status_in_programme",
+                "sample": "Compulsory/Courses of Limited Choice",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "credit_points",
+                "sample": "6.0",
+                "recommendedType": {
+                  "type": "float"
+                }
+              },
+              {
+                "name": "languages",
+                "sample": "LV, EN",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "abstract",
+                "sample": "Adequate technology is needed to implement effective data storage and retrieval. The study course de...",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "aims",
+                "sample": "The aim of the study course is to acquaint students with the technologies of using Database (DB) sys...",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "independent_study",
+                "sample": "The knowledge gained in lectures is strengthened and improved in practical work. Practical works als...",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "recommended_literature",
+                "sample": "1. Obligatā. / Obligatory 2. Date, C. J.. An introduction to database systems / C.J. Date Boston (MA...",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "prerequisites",
+                "sample": "Algebra of relations and objects; predicate invoices; logic programming; data structures and algorit...",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "detail_status",
+                "sample": "detailed_pdf_available",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "source_url",
+                "sample": "https://studreg.rtu.lv/reg/pub/skr/pdf/37453/en/DE0745.pdf",
+                "recommendedType": {
+                  "type": "string"
+                }
+              }
+            ]
+          },
+          {
+            "name": "nodes_learning_outcomes.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "outcome_id",
+                "sample": "PLO_1ebb9af2c72835",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "text",
+                "sample": "can identify business goals which are supportable by ICT solutions",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "scope",
+                "sample": "programme",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "owner_id",
+                "sample": "DMB0",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "ordinal",
+                "sample": "1",
+                "recommendedType": {
+                  "type": "integer"
+                }
+              }
+            ]
+          },
+          {
+            "name": "nodes_course_topics.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "topic_id",
+                "sample": "TOPIC_1ea7cdfb55c5ed",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "course_id",
+                "sample": "DE0745",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "title",
+                "sample": "Universal database systems: relational and object-relational databases.",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "ordinal",
+                "sample": "1",
+                "recommendedType": {
+                  "type": "integer"
+                }
+              },
+              {
+                "name": "intramural_contact_hours",
+                "sample": "8",
+                "recommendedType": {
+                  "type": "integer"
+                }
+              },
+              {
+                "name": "intramural_independent_hours",
+                "sample": "10",
+                "recommendedType": {
+                  "type": "integer"
+                }
+              },
+              {
+                "name": "extramural_contact_hours",
+                "sample": "0",
+                "recommendedType": {
+                  "type": "integer"
+                }
+              },
+              {
+                "name": "extramural_independent_hours",
+                "sample": "0",
+                "recommendedType": {
+                  "type": "integer"
+                }
+              }
+            ]
+          },
+          {
+            "name": "program+study_field.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "program_id",
+                "sample": "DMB0",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "study_field_id",
+                "sample": "FIELD_9f58481800cf03",
+                "recommendedType": {
+                  "type": "string"
+                }
+              }
+            ]
+          },
+          {
+            "name": "program+course.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "program_id",
+                "sample": "DMB0",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "course_id",
+                "sample": "DE0745",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "credit_points",
+                "sample": "6.0",
+                "recommendedType": {
+                  "type": "float"
+                }
+              },
+              {
+                "name": "section_code",
+                "sample": "A",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "section_name",
+                "sample": "Compulsory Study Courses",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "subsection_name",
+                "sample": "",
+                "recommendedType": {
+                  "type": "string"
+                }
+              }
+            ]
+          },
+          {
+            "name": "course+topic.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "course_id",
+                "sample": "DE0745",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "topic_id",
+                "sample": "TOPIC_1ea7cdfb55c5ed",
+                "recommendedType": {
+                  "type": "string"
+                }
+              }
+            ]
+          },
+          {
+            "name": "course+learning_outcome.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "course_id",
+                "sample": "DE0745",
+                "recommendedType": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "outcome_id",
+                "sample": "CLO_49b5d0eaac4149",
+                "recommendedType": {
+                  "type": "string"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "nodeMappings": [
+        {
+          "node": {
+            "$ref": "#n:0"
+          },
+          "tableName": "nodes_study_programs.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "program_id",
+              "property": {
+                "$ref": "#p:5"
+              }
+            },
+            {
+              "fieldName": "title",
+              "property": {
+                "$ref": "#p:6"
+              }
+            },
+            {
+              "fieldName": "study_mode",
+              "property": {
+                "$ref": "#p:7"
+              }
+            },
+            {
+              "fieldName": "languages",
+              "property": {
+                "$ref": "#p:8"
+              }
+            },
+            {
+              "fieldName": "credit_points",
+              "property": {
+                "$ref": "#p:9"
+              }
+            },
+            {
+              "fieldName": "prerequisites",
+              "property": {
+                "$ref": "#p:10"
+              }
+            },
+            {
+              "fieldName": "future_employment",
+              "property": {
+                "$ref": "#p:11"
+              }
+            },
+            {
+              "fieldName": "professional_classification_code",
+              "property": {
+                "$ref": "#p:12"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:1"
+          },
+          "tableName": "nodes_study_courses.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "course_id",
+              "property": {
+                "$ref": "#p:13"
+              }
+            },
+            {
+              "fieldName": "credit_points",
+              "property": {
+                "$ref": "#p:14"
+              }
+            },
+            {
+              "fieldName": "languages",
+              "property": {
+                "$ref": "#p:15"
+              }
+            },
+            {
+              "fieldName": "aims",
+              "property": {
+                "$ref": "#p:16"
+              }
+            },
+            {
+              "fieldName": "title",
+              "property": {
+                "$ref": "#p:28"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:2"
+          },
+          "tableName": "nodes_course_topics.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "topic_id",
+              "property": {
+                "$ref": "#p:17"
+              }
+            },
+            {
+              "fieldName": "course_id",
+              "property": {
+                "$ref": "#p:18"
+              }
+            },
+            {
+              "fieldName": "title",
+              "property": {
+                "$ref": "#p:19"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:3"
+          },
+          "tableName": "nodes_learning_outcomes.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "outcome_id",
+              "property": {
+                "$ref": "#p:20"
+              }
+            },
+            {
+              "fieldName": "text",
+              "property": {
+                "$ref": "#p:21"
+              }
+            },
+            {
+              "fieldName": "scope",
+              "property": {
+                "$ref": "#p:22"
+              }
+            },
+            {
+              "fieldName": "owner_id",
+              "property": {
+                "$ref": "#p:23"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:4"
+          },
+          "tableName": "nodes_study_fields.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "study_field_id",
+              "property": {
+                "$ref": "#p:3"
+              }
+            },
+            {
+              "fieldName": "name",
+              "property": {
+                "$ref": "#p:4"
+              }
+            }
+          ]
+        }
+      ],
+      "relationshipMappings": [
+        {
+          "relationship": {
+            "$ref": "#r:0"
+          },
+          "tableName": "program+course.csv",
+          "fromMappings": {
+            "#p:5": "program_id"
+          },
+          "toMappings": {
+            "#p:13": "course_id"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "credit_points",
+              "property": {
+                "$ref": "#r:0:credit_points"
+              }
+            },
+            {
+              "fieldName": "section_code",
+              "property": {
+                "$ref": "#r:0:section_code"
+              }
+            },
+            {
+              "fieldName": "section_name",
+              "property": {
+                "$ref": "#r:0:section_name"
+              }
+            },
+            {
+              "fieldName": "subsection_name",
+              "property": {
+                "$ref": "#r:0:subsection_name"
+              }
+            }
+          ]
+        },
+        {
+          "relationship": {
+            "$ref": "#r:1"
+          },
+          "tableName": "program+study_field.csv",
+          "fromMappings": {
+            "#p:3": "study_field_id"
+          },
+          "toMappings": {
+            "#p:5": "program_id"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "program_id",
+              "property": {
+                "$ref": "#p:26"
+              }
+            },
+            {
+              "fieldName": "study_field_id",
+              "property": {
+                "$ref": "#p:27"
+              }
+            }
+          ]
+        },
+        {
+          "relationship": {
+            "$ref": "#r:3"
+          },
+          "tableName": "course+topic.csv",
+          "fromMappings": {
+            "#p:13": "course_id"
+          },
+          "toMappings": {
+            "#p:17": "topic_id"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "course_id",
+              "property": {
+                "$ref": "#p:24"
+              }
+            },
+            {
+              "fieldName": "topic_id",
+              "property": {
+                "$ref": "#p:25"
+              }
+            }
+          ]
+        },
+        {
+          "relationship": {
+            "$ref": "#r:4"
+          },
+          "tableName": "course+learning_outcome.csv",
+          "propertyMappings": [
+            {
+              "fieldName": "course_id",
+              "property": {
+                "$ref": "#p:1"
+              }
+            },
+            {
+              "fieldName": "outcome_id",
+              "property": {
+                "$ref": "#p:2"
+              }
+            }
+          ],
+          "fromMappings": {
+            "#p:13": "course_id"
+          },
+          "toMappings": {
+            "#p:20": "outcome_id"
+          }
+        }
+      ]
+    },
+    "configurations": {
+      "idsToIgnore": [],
+      "arrayDelimiter": "|",
+      "vectorDelimiter": "|"
+    }
+  }
+}
